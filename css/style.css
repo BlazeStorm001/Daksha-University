@@ -1,0 +1,468 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f8f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #3a776c;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* icons */
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/* Body and Heading */
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    /* line-height: 1rem; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: #3a776c;
+    height: 1vh;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    border: none;
+}
+
+
+/* Table */
+
+td {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table {
+    /* With table-layout: fixed, you can size your columns according to the width of their headings, */
+    table-layout: fixed;
+    width: 100%;
+    /* the borders collapse down into one */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+caption {
+    background-color: #3a776c;
+    color: white;
+    padding: 3vh;
+}
+
+tr:nth-child(odd) {
+    background-color: #f8f1f1;
+}
+
+
+/* Header */
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    background-color: #f8f1f1;
+    overflow: hidden;
+    top: 0;
+    padding: 1vh;
+    height: 11vh;
+    z-index: 9999;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .14);
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/logo.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Navigation */
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f8f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    /* Must be equal to the header's height */
+    top: 11vh;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Caret icon before the link */
+
+nav ul li a::before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    content: "chevron_right";
+    padding: 2px;
+    position: relative;
+    top: 4px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #eb5e0b;
+}
+
+
+/* Main Content of Home */
+
+.content {
+    /* for the nav menu */
+    margin-left: 20%;
+    padding: 1px 16px;
+    /* for header */
+    margin-top: 11vh;
+    /* Due to padding */
+    overflow-x: hidden;
+}
+
+main>div {
+    margin-bottom: 10vh;
+}
+
+.admission {
+    color: white;
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    background-color: #3a776c;
+}
+
+.admission h2 {
+    line-height: 4rem;
+}
+
+
+/* Left half of admission section */
+
+.admission div:first-child {
+    padding: 1vw;
+}
+
+.admission-bg-image {
+    background-size: cover;
+    background-image: url('../assets/img/admission.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.enroll-btn {
+    display: block;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    padding-top: 4vh;
+    width: 50%;
+    height: 8vh;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.enroll-btn:hover {
+    background-color: #eb5e0b;
+    color: white;
+}
+
+
+/* facilities division */
+
+.facilities {
+    display: flex;
+    width: 100%;
+}
+
+.facilities>div {
+    flex: 1;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.facilities p {
+    font-size: 1.7rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.facilities>div>div {
+    padding: 1vh;
+    align-items: center;
+    display: flex;
+    /* Height = 100/no of rows in the division*/
+    height: 30%;
+}
+
+.facilities .material-icons {
+    font-size: 3rem;
+    margin-right: 10px;
+    background-color: #3a776c;
+    color: white;
+    padding: 1vh;
+}
+
+
+/* section vision */
+
+.vision {
+    color: white;
+    display: flex;
+    width: 100%;
+    /* background-image: url('../assets/bg-filter-3.png'), url('../assets/img/pexels-pixabay-267885.jpg'); */
+    background-image: url('../assets/img/pexels-pixabay-267885.jpg');
+    /* background-size: contain, 100% 100%; */
+    background-size: 100% 100%;
+    /* background-repeat: repeat, no-repeat; */
+    background-repeat: no-repeat;
+    text-shadow: white;
+}
+
+.vision .section {
+    flex: 1;
+    padding: 2%;
+}
+
+.vision .section>div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3vh;
+}
+
+.vision .section h3 {
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.vision .section p {
+    text-align: center;
+}
+
+
+/* svg icon */
+
+.icon-vision {
+    fill: white;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+}
+
+.icon-vision:hover {
+    fill: #eb5e0b;
+}
+
+
+/* Student Life section */
+
+.stu-life {
+    display: flex;
+    width: 100%;
+}
+
+.stu-life img {
+    flex: 1;
+}
+
+.stu-life>div {
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* Important Dates Page */
+
+.important-dates .material-icons {
+    position: relative;
+    font-size: 4rem;
+    top: 10px;
+}
+
+.important-dates h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.important-dates ul {
+    list-style: none;
+}
+
+.important-dates ul li::before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    content: "chevron_right";
+    padding: 2px;
+    position: relative;
+    top: 4px;
+}
+
+
+/* Forms */
+
+form ul {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.submit-btn {
+    background-color: #eb5e0b;
+    color: white;
+    padding: 5px;
+    border: none;
+    height: 7vh;
+    width: 20%;
+    margin-left: 80%;
+}
+
+form {
+    width: 70%;
+}
+
+form ul {
+    width: 100%;
+}
+
+form li {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    margin: 2vh 0;
+    border-style: solid;
+    border-color: #3a776c;
+    border-width: 5px;
+    align-items: center;
+}
+
+form li label:first-child {
+    flex: 1;
+    background-color: #3a776c;
+    height: 100%;
+    padding: 1vh;
+    color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    flex: 4;
+    border-style: none;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 1vh;
+    box-sizing: border-box;
+    outline-style: none;
+    margin-left: 1vw;
+}
+
+.radio-container {
+    flex: 4;
+    width: 100%;
+    margin-left: 1vw;
+}
+
+select {
+    padding: 1vh;
+    flex: 1;
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #3a776c;
+    padding: 0.5vh;
+    color: white;
+    margin-left: 20%;
+}

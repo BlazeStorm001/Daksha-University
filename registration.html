@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Namit Arora">
+    <meta name="description" content="Open a world of
+           new possibilities with Daksha University">
+    <link rel="shortcut icon" href="assets/logo/1x/16h/16h/Asset 4.png">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- script for form validation -->
+    <script src="script/validate.js"></script>
+    <title>Registration</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programme_list.html">Programme List</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="important_dates.html">Important Dates</a></li>
+        </ul>
+    </nav>
+
+    <!-- Here is our page's main content -->
+    <div class="content">
+        <main>
+            <h1>Registration Form</h1>
+            <hr>
+            <form name="reg-form" onsubmit="return validateForm()" method="post">
+                <ul>
+                    <li>
+                        <label for="Name">Name:</label><input type="text" id="student_name" name="Name">
+                    </li>
+
+                    <li>
+                        <label for="Phone">Phone:</label><input type="tel" id="student_phone" name="Phone">
+
+                    </li>
+
+                    <li>
+                        <label for="Programme">Choose Programme:</label>
+                        <select id="programme" name="Programme">
+                        <option value="BCA">BCA</option>
+                        <option value="BA">BA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="B.Sc Physics">B.Sc Physics</option>
+                        <option value="B.Sc Chemistry">B.Sc Chemistry</option>
+                        <option value="B.Sc Mathematics">B.Sc Mathematics</option>
+                        <option value="B.Arch">B.Arch</option>
+                      </select>
+                    </li>
+
+                    <li>
+                        <label>Qualification</label>
+                        <div class="radio-container">
+                            <input type="radio" id="12th_pass" name="Qualification" value="12th_Pass" checked>
+                            <label for="12th_pass">12th Pass</label>
+                            <input type="radio" id="graduate" name="Qualification" value="Graduate">
+                            <label for="graduate">Graduate</label>
+                            <input type="radio" id="post_graduate" name="Qualification" value="Post_Graduate">
+                            <label for="post_graduate">Post Graduate</label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <label for="Email">Email:</label><input type="email" id="student_email" name="Email">
+                    </li>
+
+                    <button type="submit" class="submit-btn">Register</button>
+
+                </ul>
+            </form>
+
+        </main>
+    </div>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+
+    <footer>
+        <p>©Copyright 2021 by Namit Arora. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

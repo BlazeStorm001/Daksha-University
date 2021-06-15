@@ -1,0 +1,4 @@
+main eb5e0b
+accent a3d2ca
+bg dark #3a776c
+bg light #f8f1f1
