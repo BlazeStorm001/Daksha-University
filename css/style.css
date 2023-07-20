@@ -61,7 +61,7 @@ html {
 
 body {
     font-family: 'Merriweather', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     /* line-height: 1rem; */
 }
@@ -81,11 +81,11 @@ a {
 
 hr {
     background-color: #3a776c;
-    height: 1vh;
+    height: 5px;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-bottom: 5vh;
-    margin-top: 1vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
     border: none;
 }
 
@@ -206,7 +206,7 @@ nav ul li a:hover {
 }
 
 main>div {
-    margin-bottom: 10vh;
+    margin-bottom: 20px;
 }
 
 .admission {
@@ -225,7 +225,7 @@ main>div {
 /* Left half of admission section */
 
 .admission div:first-child {
-    padding: 1vw;
+    padding: 10px;
 }
 
 .admission-bg-image {
@@ -241,9 +241,9 @@ main>div {
     font-weight: bold;
     background-color: white;
     text-align: center;
-    padding-top: 4vh;
+    padding-top: 7px;
     width: 50%;
-    height: 8vh;
+    height: 50px;
     margin: auto;
     border-radius: 30px;
 }
@@ -253,6 +253,10 @@ main>div {
     color: white;
 }
 
+/* Section headings */
+/* h2.section_heading {
+
+} */
 
 /* facilities division */
 
@@ -262,23 +266,20 @@ main>div {
 }
 
 .facilities>div {
-    flex: 1;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    flex: 1;    
 }
 
-.facilities p {
-    font-size: 1.7rem;
+.facilities p {    
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
 .facilities>div>div {
-    padding: 1vh;
+    padding: 5px;
     align-items: center;
     display: flex;
     /* Height = 100/no of rows in the division*/
-    height: 30%;
+    height: 33%;
 }
 
 .facilities .material-icons {
@@ -312,7 +313,7 @@ main>div {
 
 .vision .section>div {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 3vh;
+    padding: 5px;
 }
 
 .vision .section h3 {
@@ -349,6 +350,7 @@ main>div {
 
 .stu-life img {
     flex: 1;
+    width:100%;
 }
 
 .stu-life>div {
