@@ -27,6 +27,22 @@
     form {
         width: 100%;
     }
+
+    .menu-btn {
+        display: block !important;
+    }
+
+    nav a {        
+        padding: 10px 16px;        
+    }
+
+    nav ul li:not(:first-child) {
+        display:none;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
   }  
   
   
