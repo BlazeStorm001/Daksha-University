@@ -203,10 +203,12 @@ nav ul li a::before {
    background-color: #3a776c;
    color: white;
    display: none;
+   padding: 16px;
 }
 
-.menu-btn a{    
-    color: white;
+.menu-btn i{    
+    line-height: 1.6;
+    float:right;
  }
 
 

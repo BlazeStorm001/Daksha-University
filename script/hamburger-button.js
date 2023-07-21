@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 
 function displayMenu() {
-    menu = document.querySelectorAll('nav ul li:not(:first-child)');    
+    menu = document.querySelectorAll('nav ul');    
     const styles = window.getComputedStyle(menu[0]);
     const display = styles.getPropertyValue("display");
     console.log(`${display}`);
