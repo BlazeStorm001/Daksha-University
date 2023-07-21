@@ -443,7 +443,9 @@ form li {
 form li label:first-child {
     flex: 1;
     background-color: #3a776c;    
-    padding: 1vh;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5px;
     color: white;
 }
 
