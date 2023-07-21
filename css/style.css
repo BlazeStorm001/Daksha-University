@@ -186,19 +186,6 @@ nav ul li a::before {
     top: 4px;
 }
 
-.menu-btn a::before {
-    content: none;
-}
-
-.menu-btn a::after {
-    font-family: 'Material Icons';
-    content: "menu";
-    position: relative;
-    font-size: 20px;
-    top: 6px;
-    left: 85%;
-}
-
 .menu-btn {
    background-color: #3a776c;
    color: white;
@@ -210,8 +197,6 @@ nav ul li a::before {
     line-height: 1.6;
     float:right;
  }
-
-
 
 nav ul li a:hover {
     color: white;
