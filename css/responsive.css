@@ -45,5 +45,10 @@
     }
   }  
   
-  
+  @media (max-width: 400px) {
+    form ul li {
+        height:auto;
+        flex-wrap: wrap;
+    }
+  }
   
