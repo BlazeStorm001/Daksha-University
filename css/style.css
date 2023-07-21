@@ -368,6 +368,7 @@ main>div {
 .stu-life>div {
     display: flex;
     flex-flow: column;
+    flex: 1;
 }
 
 
