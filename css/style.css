@@ -63,6 +63,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 1.5rem;
     line-height: 3rem;
+    
     /* line-height: 1rem; */
 }
 
@@ -214,6 +215,8 @@ nav ul li a:hover {
     margin-top: 11vh;
     /* Due to padding */
     overflow-x: hidden;
+    position: relative;
+        
 }
 
 main>div {
@@ -277,6 +280,8 @@ main>div {
 }
 
 .facilities>div {
+    display: flex;
+    flex-direction: column;
     flex: 1;    
 }
 
@@ -363,11 +368,12 @@ main>div {
 .stu-life img {
     flex: 1;
     width:100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
 }
 
-.stu-life>div {
-    display: flex;
-    flex-flow: column;
+.stu-life>div {       
     flex: 1;
 }
 
@@ -482,6 +488,8 @@ select {
 footer {
     background-color: #3a776c;
     padding: 0.5vh;
-    color: white;
-    margin-left: 20%;
+    color: white;    
+    position: absolute;
+    width: 100%;
+    
 }
